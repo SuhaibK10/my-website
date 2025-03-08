@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Force Tailwind into Dark Mode
+        tailwind.config = {
+            darkMode: 'class',
+        };
+    </script>
+</head>
+<body class="dark bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 fixed top-0 left-0 w-full z-10 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-2xl font-bold text-blue-400">Suhaib Khan</a>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                    <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+                    <li><a href="#blogs" class="hover:text-blue-400">Blogs</a></li>
+                    <li><a href="#social" class="hover:text-blue-400">Social</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-gray-300 text-2xl">
+                    ☰
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-800 shadow-md">
+            <ul class="flex flex-col space-y-4 p-4">
+                <li><a href="#home" class="block hover:text-blue-400">Home</a></li>
+                <li><a href="#skills" class="block hover:text-blue-400">Skills</a></li>
+                <li><a href="#projects" class="block hover:text-blue-400">Projects</a></li>
+                <li><a href="#blogs" class="block hover:text-blue-400">Blogs</a></li>
+                <li><a href="#social" class="block hover:text-blue-400">Social</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="h-screen flex items-center justify-center bg-gray-900 px-10">
+      <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-16 py-10">
+          <!-- Left Side (Text) -->
+          <div class="md:w-1/2 text-white">
+              
+              <p class="mt-3  text-gray-300 leading-relaxed font-bold text-2xl">
+                  Passionate Computer Science Student,<br>
+                  Deeply curious about technology, innovation, and entrepreneurship.<br> Fascinated by physics, human evolution and the fundamental questions of existence,<br> I explore the intersection of science, technology, and strategy. With a growing interest in venture capitalism, I strive to merge technical expertise with strategic thinking to push the boundaries of innovation and knowledge.
+              </p>
+          </div>
+  
+          <!-- Right Side (Image) -->
+          <div class="md:w-1/2 flex justify-center">
+              <img src="https://avatars.githubusercontent.com/u/108028952?v=4" alt="My Photo"
+                  class="max-w-sm md:max-w-md rounded-lg shadow-lg">
+          </div>
+      </div>
+  </section>
+  
+  
+
+<!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-900 text-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">Skills</h2>
+
+            <!-- Languages -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Languages</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="skill-badge"><img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Emblem.jpg" class="icon"> Java</span>
+                    <span class="skill-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="icon"> Python</span>
+                    <span class="skill-badge"><img src="https://ih1.redbubble.net/image.4419222780.5977/fposter,small,wall_texture,product,750x1000.jpg" class="icon"> C</span>
+                    <span class="skill-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="icon">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- DevOps -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bolder mb-3">DevOps</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="skill-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png" class="icon">  AWS EC2</span>
+                    <span class="skill-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon"> GitHub Actions</span>
+                </div>
+            </div>
+
+            <!-- Libraries-->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Libraries</h3>
+                <div class="flex flex-wrap gap-4">
+                  <span class="skill-badge"><img src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png" class="icon"> TailwindCSS</span>
+                    <span class="skill-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" class="icon"> ReactJS</span>
+                   
+                    
+                    <span class="skill-badge"><img src="https://dz2cdn1.dzone.com/storage/temp/12434118-spring-boot-logo.png" class="icon"> SpringBoot</span>
+                    
+
+                </div>
+            </div>
+
+            <!-- Databases-->
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Databases</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="skill-badge"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF9UXfrx8TWM7eyKB1jdIk66ZoGVmTtqWjKQ&s" class="icon"> MySQL</span>
+                    <span class="skill-badge"><img src="https://logos-world.net/wp-content/uploads/2020/09/Oracle-Logo.png" class="icon"> Oracle SQL</span>
+                    <span class="skill-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="icon"> MongoDB</span>
+                </div>
+            </div>
+
+            <!--Tools Section-->
+            <div>
+
+              <h3 class="text-xl font-semibold mb-3">Tools</h3>
+              <div class="flex flex-wrap gap-4">
+                  <span class="skill-badge"><img src="https://miro.medium.com/v2/resize:fit:400/1*KWeXamv1oqIvzKLlPhn-rA.png" class="icon">Docker</span>
+                  <span class="skill-badge"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" class="icon"> Git</span>
+
+              </div>
+          </div>
+
+            <!-- Projects Section -->
+
+            <section id="projects" class="py-16 bg-gray-900 text-white">
+              <div class="max-w-5xl mx-auto px-6">
+                  <h2 class="text-3xl font-bold mb-6">Projects</h2>
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      
+                      <!-- Project 1 -->
+                      <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                          <h3 class="text-xl font-semibold">Currency Converter</h3>
+                          <p class="text-sm text-gray-400">A currency converter using Fetch API.</p>
+                          <a href="https://github.com/SuhaibK10/Currency-Convert-Fetch-API-" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+                          
+                      </div>
+                      
+                      
+                      
+                      
+                
+                  </div>
+              </div>
+            </section>
+            
+
+<!-- Blogs Section (Fetch from Medium) -->
+<section id="latest-blogs" class="bg-gray-900 text-white py-10 px-6">
+  <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Latest Blogs</h2>
+      <ul class="space-y-4">
+          <li>
+              <a href="https://medium.com/@suhaibkhan830/the-jiohotstar-domain-saga-2cf20921ffbb" 
+                 class="text-blue-400 hover:underline text-lg">
+                 The JioHotstar Domain Saga
+              </a>
+          </li>
+      
+          
+      </ul>
+  </div>
+</section>
+
+
+
+<!-- Social Section -->
+<section id="social" class="py-16 bg-gray-900 text-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Connect With Me</h2>
+      <div class="flex justify-center gap-6">
+          <a href="https://github.com/yourgithub" target="_blank" class="text-xl hover:text-blue-400">GitHub</a>
+          <a href="https://www.linkedin.com/in/suhaibkhan10/" target="_blank" class="text-xl hover:text-blue-400">LinkedIn</a>
+          
+      </div>
+  </div>
+</section>
+
+<!-- JavaScript for Blogs and Mobile Menu -->
+<script>
+  // Mobile Menu Toggle
+  document.getElementById("menuBtn").addEventListener("click", function () {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+  });
+
+
+</script>
+
+        </div>
+    </section>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Tailwind CSS Styling -->
+    <style>
+        .skill-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #1e1e1e;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .skill-badge:hover {
+            background-color: #2e2e2e;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+
+</body>
+</html>
